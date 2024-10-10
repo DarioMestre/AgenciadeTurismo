@@ -112,12 +112,16 @@ nav ul li a:hover {
     border-radius: 10px 10px 0 0;
 }
 
-.destination h3 {
-    color: var(--color-primario);
-    margin: 0.5rem 0;
+.description{
+    padding: 0 7px;
 }
 
-.destination p {
+.description h3 {
+    color: var(--color-primario);
+    margin: 0 0 0.5rem 0;
+}
+
+.description p {
     color: var(--color-texto-secundario);
 }
 
@@ -131,17 +135,12 @@ footer {
 
 /* Estilos para la sección de contacto */
 #contacto {
-    background-color: #f0f0f0;
-    padding: 50px 20px;
+
+    padding: 60px 20px;
     text-align: center;
     margin-top: 50px; /* Asegura separación del resto del contenido */
 }
 
-#contacto {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
 
 #contacto h2 {
     font-size: 2.5rem;
@@ -332,6 +331,11 @@ button.btn-agregar-carrito:hover {
     background-color: #218838;
 }
 
+footer{
+    margin: 0;
+    width: 100%;
+}
+
 /* Estilos para una mejor disposición en pantallas pequeñas */
 @media (max-width: 768px) {
     article.hoteles {
@@ -342,3 +346,5 @@ button.btn-agregar-carrito:hover {
 
 @media (max-width: 480px) {
     .destination {
+    }
+}
