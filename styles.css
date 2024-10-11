@@ -84,6 +84,11 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+/*Logo Redondo*/
+.hero-content img{
+    border-radius: 100%;
+}
+
 .destinations {
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +145,6 @@ footer {
     text-align: center;
     margin-top: 50px; /* Asegura separación del resto del contenido */
 }
-
 
 #contacto h2 {
     font-size: 2.5rem;
@@ -334,6 +338,53 @@ button.btn-agregar-carrito:hover {
 footer{
     margin: 0;
     width: 100%;
+    padding: 20px 30px;
+    font-size: 17px;    
+}
+
+.social-links{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;    
+}
+/*    
+.social-links a{
+    background-color: white;
+    color: #000;
+    height: auto;
+    width: auto;
+    border-radius: 8px;
+    padding: 7px 10px;
+    margin: 7px 10px;
+}
+.link:hover{
+    background-color:#ff00ee;
+}
+*/
+
+i{
+    box-shadow: 1px 2px 5px #000;
+    text-align: center;
+    color: #000;
+    height: 31px;
+    width: 31px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.fa-instagram:hover{
+    background: #833ab4;
+    background: linear-gradient(to bottom,#833ab4,#fd1d1d,#fcb045);
+    color: #fff;
+}
+.fa-twitter:hover{
+    background: #08a0e9;
+    color: #fff;
+}
+.fa-facebook-f:hover{
+    background: #1877F2;
+    color: #fff;
 }
 
 /* Estilos para una mejor disposición en pantallas pequeñas */
