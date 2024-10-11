@@ -341,28 +341,13 @@ footer{
     padding: 20px 30px;
     font-size: 17px;    
 }
-
 .social-links{
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
-    text-decoration: none;    
+    text-decoration: none;
+    width: 135px;
 }
-/*    
-.social-links a{
-    background-color: white;
-    color: #000;
-    height: auto;
-    width: auto;
-    border-radius: 8px;
-    padding: 7px 10px;
-    margin: 7px 10px;
-}
-.link:hover{
-    background-color:#ff00ee;
-}
-*/
-
 i{
     box-shadow: 1px 2px 5px #000;
     text-align: center;
