@@ -6,7 +6,7 @@
     --color-texto: #333;        /* Texto principal */
     --color-texto-secundario: #777;  /* Texto secundario */
     --color-acento: #f5a623;    /* Naranja suave */
-    --color-header-footer: #34495e; /* Azul grisáceo */
+    --color-header-footer: #d8e1eb; /* Azul grisáceo */
     --color-hover: #3b7fd9;    /* Azul más oscuro para hover */
     --color-form-bg: #fff;     /* Fondo del formulario */
     --color-form-borde: #e1e8ed; /* Borde gris claro */
@@ -43,23 +43,31 @@ body {
 header {
     background-color: var(--color-header-footer);
     color: #fff;
-    padding: 1rem 0;
+    padding: 0,5% 0;
 }
-
-nav ul {
+.logo img{
+    width: 25%;
+    height: 25%;
+}
+.navbar{
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-
-nav ul li a {
-    color: #fff;
+.nav-links{
+    display:flex;
+    list-style: none;
+}
+.nav-links li a{
+    font-size: large;
+    color: #080808;
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     background-color: var(--color-hover);
     border-radius: 5px;
 }
@@ -76,14 +84,17 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hero-content {
-    text-align: center;
-    color: #fff;
-    background-color: rgba(52, 73, 94, 0.6);
-    padding: 2rem;
-    border-radius: 10px;
+.hero-content img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 48%;
+    width: 48%;
+    display: inline;
+    justify-content: center;
 }
-
+#nosotros p{
+    text-align: center;
+}
 .destinations {
     display: flex;
     flex-wrap: wrap;
