@@ -34,7 +34,7 @@ body {
     color: var(--color-texto);
 }
 
-.container {
+.menu {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -140,10 +140,9 @@ footer {
 
 /* Estilos para la sección de contacto */
 #contacto {
-
+    background: linear-gradient(0deg, rgba(0,0,0,0) 75%, rgba(248, 249, 250,1) 100%);
     padding: 60px 20px;
     text-align: center;
-    margin-top: 50px; /* Asegura separación del resto del contenido */
 }
 
 #contacto h2 {
@@ -252,18 +251,16 @@ footer {
     justify-content: space-between;
     background-color: #f8f9fa;
     padding: 40px 20px;
-    margin-bottom: 50px; /* Añade margen para separar del pie de página */
 }
 
 article.hoteles {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-right: 10px;
     padding: 20px;
     max-width: 45%;
     flex: 1;
-    margin-right: 10px;
 }
 
 article.hoteles h3 {
