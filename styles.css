@@ -34,18 +34,21 @@ body {
     color: var(--color-texto);
 }
 
-.menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 header {
     background-color: var(--color-header-footer);
     color: #fff;
-    padding: 1rem 0;
+    height: 58px;
 }
 
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    max-height: 58px;
+    padding: 16px 0;   
+}
+nav{
+    height: 26px;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -57,11 +60,23 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
+    border-radius: 5px;
 }
-
 nav ul li a:hover {
     background-color: var(--color-hover);
-    border-radius: 5px;
+}
+
+.barras{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.fa-bars{
+    color: #fff;
+}
+#check{
+    display: none;
 }
 
 .hero {
@@ -345,7 +360,7 @@ footer{
     text-decoration: none;
     width: 135px;
 }
-i{
+.fa-brands{
     box-shadow: 1px 2px 5px #000;
     text-align: center;
     color: #000;
@@ -380,4 +395,31 @@ i{
 @media (max-width: 480px) {
     .destination {
     }
+}
+
+@media (max-width: 710px){
+    .barras{
+        display: block;
+        top: 0%;
+        margin: 5px 13px;
+    }
+    .parts{
+        flex-direction: column;
+        position:absolute;
+        width: 100%;
+        background-color: var(--color-header-footer);
+        top: 58px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px;
+    }
+    #check:checked ~.parts{
+        left: 0;
+    }
+    bu
+    .parts:mou
 }
