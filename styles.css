@@ -28,24 +28,29 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     line-height: 1.6;
     background-color: var(--color-fondo);
     color: var(--color-texto);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 header {
+    font-family: "Josefin Sans", sans-serif;
     background-color: var(--color-header-footer);
     color: #fff;
-    padding: 1rem 0;
+    height: 58px;
 }
 
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    max-height: 58px;
+    padding: 16px 0;   
+}
+
+nav{
+    height: 26px;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -57,11 +62,23 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
+    border-radius: 5px;
 }
-
 nav ul li a:hover {
     background-color: var(--color-hover);
-    border-radius: 5px;
+}
+
+.barras{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.fa-bars{
+    color: #fff;
+}
+#check{
+    display: none;
 }
 
 .hero {
@@ -82,6 +99,11 @@ nav ul li a:hover {
     background-color: rgba(52, 73, 94, 0.6);
     padding: 2rem;
     border-radius: 10px;
+}
+
+/*Logo Redondo*/
+.hero-content img{
+    border-radius: 100%;
 }
 
 .destinations {
@@ -112,12 +134,16 @@ nav ul li a:hover {
     border-radius: 10px 10px 0 0;
 }
 
-.destination h3 {
-    color: var(--color-primario);
-    margin: 0.5rem 0;
+.description{
+    padding: 0 7px;
 }
 
-.destination p {
+.description h3 {
+    color: var(--color-primario);
+    margin: 0 0 0.5rem 0;
+}
+
+.description p {
     color: var(--color-texto-secundario);
 }
 
@@ -131,15 +157,8 @@ footer {
 
 /* Estilos para la sección de contacto */
 #contacto {
-    background-color: #f0f0f0;
-    padding: 50px 20px;
-    text-align: center;
-    margin-top: 50px; /* Asegura separación del resto del contenido */
-}
-
-#contacto {
+    background: linear-gradient(0deg, rgba(0,0,0,0) 75%, rgba(248, 249, 250,1) 100%);
     padding: 60px 20px;
-    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -249,18 +268,16 @@ footer {
     justify-content: space-between;
     background-color: #f8f9fa;
     padding: 40px 20px;
-    margin-bottom: 50px; /* Añade margen para separar del pie de página */
 }
 
 article.hoteles {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-right: 10px;
     padding: 20px;
     max-width: 45%;
     flex: 1;
-    margin-right: 10px;
 }
 
 article.hoteles h3 {
@@ -332,6 +349,43 @@ button.btn-agregar-carrito:hover {
     background-color: #218838;
 }
 
+footer{
+    margin: 0;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 17px;    
+}
+.social-links{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 135px;
+}
+.fa-brands{
+    box-shadow: 1px 2px 5px #000;
+    text-align: center;
+    color: #000;
+    height: 31px;
+    width: 31px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.fa-instagram:hover{
+    background: #833ab4;
+    background: linear-gradient(to bottom,#833ab4,#fd1d1d,#fcb045);
+    color: #fff;
+}
+.fa-twitter:hover{
+    background: #08a0e9;
+    color: #fff;
+}
+.fa-facebook-f:hover{
+    background: #1877F2;
+    color: #fff;
+}
+
 /* Estilos para una mejor disposición en pantallas pequeñas */
 @media (max-width: 768px) {
     article.hoteles {
@@ -342,3 +396,31 @@ button.btn-agregar-carrito:hover {
 
 @media (max-width: 480px) {
     .destination {
+    }
+}
+
+@media (max-width: 710px){
+    .barras{
+        display: block;
+        top: 0%;
+        margin: 5px 13px;
+    }
+    .parts{
+        flex-direction: column;
+        position:absolute;
+        width: 100%;
+        background-color: var(--color-header-footer);
+        top: 58px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px;
+    }
+    #check:checked ~.parts{
+        left: 0;
+    }
+
+}
