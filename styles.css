@@ -19,13 +19,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Bree Serif", serif;
 }
 
-.fondo {
-    background-image: url('https://rumbonaturaleza.com/wp-content/uploads/2022/11/023_Ecoturismo_FrontCover_TurismoDeAventura.jpg');
-    background-size: cover;
-    background-position: center; 
+h1 {
+    font-size: 60px;
+    color: #e1e8ed;
+
 }
+
+@media (max-width: 710px){
+    h1 {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    color: #03162e;
+}
+
+p {
+    color: #fff;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -81,7 +100,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('ruta/a/tu/imagen_hero.jpg');
+    background-image: url('imagenes/fondo.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -98,7 +117,11 @@ nav ul li a:hover {
     background-color: rgba(52, 73, 94, 0.6);
     padding: 2rem;
     border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
+
+
 
 /*Logo Redondo*/
 .hero-content img{
@@ -108,9 +131,13 @@ nav ul li a:hover {
 .destinations {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; 
     margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+
 
 .destination {
     flex-basis: calc(33.33% - 20px);
@@ -119,11 +146,14 @@ nav ul li a:hover {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
 }
 
 .destination:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-hover)
+    
 }
 
 .destination img {
@@ -135,15 +165,18 @@ nav ul li a:hover {
 
 .description{
     padding: 0 7px;
+    margin-bottom: 4%;
 }
 
 .description h3 {
-    color: var(--color-primario);
+    color: #04244d;
     margin: 0 0 0.5rem 0;
+    text-align: center;
+    font-size: 40px;
 }
 
 .description p {
-    color: var(--color-texto-secundario);
+    color: #fff;
 }
 
 footer {
@@ -161,6 +194,24 @@ footer {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 710px){
+    h2 {
+        font-size: 30px;
+    }
+
+}
+
+.nosotros {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 #contacto h2 {
     font-size: 2.5rem;
     color: #333;
@@ -172,7 +223,7 @@ footer {
 
 /* Estilos para el contenedor del formulario */
 .contact-form-container {
-    max-width: 600px;
+    max-width: 90%;
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -264,9 +315,11 @@ footer {
 .Hoteles {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #f8f9fa;
-    padding: 40px 20px;
+    padding: 2% 4% ;
+    align-items: center;
 }
 
 article.hoteles {
@@ -275,8 +328,9 @@ article.hoteles {
     border-radius: 10px;
     margin-right: 10px;
     padding: 20px;
-    max-width: 45%;
+    max-width: 80%;
     flex: 1;
+    margin-top: 4%;
 }
 
 article.hoteles h3 {
@@ -284,12 +338,14 @@ article.hoteles h3 {
     color: #333;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 article.hoteles h4 {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 article.hoteles p {
@@ -390,11 +446,6 @@ footer{
     article.hoteles {
         max-width: 100%;
         margin-right: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .destination {
     }
 }
 
